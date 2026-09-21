@@ -33,13 +33,22 @@ export default function Home() {
         <img
           src="/images/front-luffy2.png"
           alt="One Piece Luffy entrance"
-          className="absolute inset-0 h-full w-full object-cover object-center"
+          className="
+            absolute inset-0
+            h-full w-full
+            object-cover
+            object-[78%_center]
+            md:object-center
+          "
         />
 
+        {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/25" />
 
+        {/* Left dark gradient for text readability */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/95 via-black/60 to-black/5" />
 
+        {/* Bottom fade */}
         <div className="absolute inset-x-0 bottom-0 h-64 bg-gradient-to-t from-black via-black/50 to-transparent" />
       </div>
 
@@ -625,7 +634,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SCROLL INDICATOR */}
+      {/* =====================================================
+          SCROLL INDICATOR
+      ====================================================== */}
 
       <motion.div
         initial={{
@@ -664,13 +675,17 @@ export default function Home() {
         />
       </motion.div>
 
-      {/* BOTTOM RIGHT LABEL */}
+      {/* =====================================================
+          BOTTOM RIGHT LABEL
+      ====================================================== */}
 
       <div className="absolute bottom-6 right-6 z-30 hidden text-[10px] tracking-wider text-white/35 md:block">
         FAN-MADE PROJECT • ONE PIECE HUB
       </div>
 
-      {/* MOBILE CONTROLS */}
+      {/* =====================================================
+          MOBILE CONTROLS
+      ====================================================== */}
 
       <div className="absolute bottom-6 left-6 z-30 flex gap-2 md:hidden">
         <a
